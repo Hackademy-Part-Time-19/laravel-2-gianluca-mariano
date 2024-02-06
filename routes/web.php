@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnimeController;
+use App\Http\Controllers\MangaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use App\Http\Controllers\AnimeController;
 |
 */
 
-Route::get('/',[AnimeController::class,'index'])->name('home');
+Route::get("/",[AnimeController::class,"index"])->name("home");
 
-Route::get('/{id}',[AnimeController::class,"animeByGenre"])->name('genre');
+Route::get("/anime/{id}",[AnimeController::class,"animeByGenre"])->name("genre");
+
+Route::get("manga",[MangaController::class,"manga"])->name("manga");

@@ -39,4 +39,7 @@ class AnimeController extends Controller
 
     }
 
+
+    
+
 }
