@@ -20,3 +20,8 @@ Route::get("/",[AnimeController::class,"index"])->name("home");
 Route::get("/anime/{id}",[AnimeController::class,"animeByGenre"])->name("genre");
 
 Route::get("manga",[MangaController::class,"manga"])->name("manga");
+
+Route::get("test1", function () {
+
+    return view("test1");
+});
