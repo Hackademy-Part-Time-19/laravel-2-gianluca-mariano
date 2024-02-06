@@ -7,14 +7,15 @@
 </head>
 <body>
     
+  <div id="main"></div>
+
 <script>
 
-fetch("http://127.0.0.1:8000/test")
+fetch("http://127.0.0.1:8000/api/api1")
   .then(response => response.json())
   .then(data => {
 
-    /* data contiene i dati letti dall'endpoint */
-    /* utilizzare js in questo punto per visualizzare nella vista, in un modo a piacere, i dati letti */
+    document.getElementById("main").innerHTML = data
 
   })
   .catch(error => {

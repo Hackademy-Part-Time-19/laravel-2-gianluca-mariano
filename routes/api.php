@@ -15,8 +15,4 @@ use App\Http\Controllers\MangaController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::get("test",[MangaController::class,"articoli"]);
+Route::get("api1",[MangaController::class,"articoli"]);
